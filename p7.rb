@@ -10,7 +10,7 @@ def till_ub(ub, expected)
 				count += 1
 				return i if count == expected
 			end
-			for j in 2..(ub/i)
+			for j in 2..(ub+1/i)
 				is_prime[j * i] = false
 			end
 		end
